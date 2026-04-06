@@ -364,8 +364,8 @@ main.offset-nav { padding-top: var(--nav-h); }
 .feature-cards {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
-  gap: 1.5rem;
-  max-width: 860px;
+  gap: 2.5rem;
+  max-width: 620px;
   margin: 0 auto;
 }
 
@@ -373,7 +373,7 @@ main.offset-nav { padding-top: var(--nav-h); }
   background: var(--cream-warm);
   border: 1px solid var(--rule);
   border-radius: 6px;
-  padding: 2.5rem 2rem 2rem;
+  padding: 3rem 2rem 2.5rem;
 }
 
 .feature-card h3 {
@@ -536,9 +536,10 @@ main.offset-nav { padding-top: var(--nav-h); }
   color: var(--terra);
   line-height: 1.55;
   text-align: center;
-  padding: 3.5rem 5%;
+  padding: 2rem 5%;
   max-width: 700px;
   margin: 0 auto;
+  background: var(--cream-warm);
 }
 
 /* ---------- BUY PAGE ---------- */
