@@ -329,9 +329,9 @@ main.offset-nav { padding-top: var(--nav-h); }
 }
 
 .hero-cover img {
-  max-height: 70vh;
+  max-height: 88vh;
   width: auto;
-  max-width: 100%;
+  max-width: 125%;
   filter: drop-shadow(8px 16px 40px rgba(0,0,0,0.45));
 }
 
@@ -364,7 +364,7 @@ main.offset-nav { padding-top: var(--nav-h); }
 .feature-cards {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
-  gap: 2.5rem;
+  gap: 3.5rem;
   max-width: 620px;
   margin: 0 auto;
 }
@@ -615,7 +615,7 @@ main.offset-nav { padding-top: var(--nav-h); }
 
 .buy-options {
   display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(160px, 1fr));
+  grid-template-columns: repeat(auto-fill, minmax(140px, 1fr));
   gap: 12px;
 }
 
