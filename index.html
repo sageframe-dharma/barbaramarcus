@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Home | Barbara Marcus</title>
+  <meta name="description" content="Born on Valentine's Day: A Memoir of Love, Loss, and Survival by Barbara Marcus — available now." />
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+
+  <!-- ===== NAV ===== -->
+  <nav class="site-nav" id="site-nav">
+    <a href="index.html" class="nav-logo">
+      <img src="assets/images/logo.png" alt="Barbara Marcus" />
+    </a>
+    <button class="nav-toggle" aria-label="Toggle menu" onclick="this.parentElement.querySelector('.nav-links').classList.toggle('open')">
+      <span></span><span></span><span></span>
+    </button>
+    <ul class="nav-links">
+      <li><a href="index.html" class="active">Home</a></li>
+      <li><a href="book.html">Book</a></li>
+      <li><a href="author.html">Author</a></li>
+      <li><a href="media.html">Media</a></li>
+      <li><a href="contact.html">Contact</a></li>
+      <li>
+        <a href="buy.html" class="nav-cta primary-cta">Buy Now</a>
+      </li>
+    </ul>
+  </nav>
+
+  <main>
+
+    <!-- ===== HERO ===== -->
+    <section class="hero" id="hero">
+      <video
+        class="hero-video"
+        autoplay muted loop playsinline
+        poster="assets/images/video-poster.jpg"
+        aria-hidden="true">
+        <source src="assets/video/hero-bg.mp4" type="video/mp4" />
+      </video>
+      <div class="hero-overlay" aria-hidden="true"></div>
+
+      <div class="hero-split">
+        <div class="hero-text">
+          <h1 class="fly-in">Born On<br>Valentine's Day</h1>
+          <p class="hero-subtitle fly-in delay-1">A memoir of love, loss, and survival</p>
+          <div class="hero-btns fly-in delay-2">
+            <a href="buy.html" class="btn btn-primary">Buy Now</a>
+            <a href="book.html" class="btn btn-outline-white">About the Book</a>
+          </div>
+        </div>
+        <div class="hero-cover fly-in-right">
+          <img src="assets/images/book-cover.png" alt="Born on Valentine's Day — book cover" />
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== VOICE & THEMES ===== -->
+    <section class="section" style="background: var(--cream-warm);">
+      <div class="feature-cards">
+        <div class="feature-card fly-in-left">
+          <h3>Voice</h3>
+          <p>Fierce, vulnerable, and quietly witty — Barbara's voice carries both pain and hope.</p>
+        </div>
+        <div class="feature-card fly-in-right">
+          <h3>Themes</h3>
+          <p>Trauma, resilience, the search for worth, and the strange, healing power of storytelling.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== ABOUT THE BOOK ===== -->
+    <section class="about-section">
+      <div class="about-split">
+        <div class="about-text fly-in-left">
+          <h2>About the Book</h2>
+          <div class="rule"></div>
+          <p>
+            Barbara Marcus was born on Valentine's Day, 1948, a day symbolizing love, but her childhood was anything but.
+            In this raw and beautifully written memoir, she chronicles a life shaped by abuse, neglect, and a mother's erratic affection.
+          </p>
+          <p>
+            From early memories of heartbreak and hope in Brooklyn to navigating the emotional wreckage left by a string of father figures,
+            <em>Born on Valentine's Day</em> is a courageous exploration of trauma, resilience, and ultimately, healing.
+          </p>
+          <a href="book.html" class="btn btn-primary" style="margin-top: 0.5rem;">Learn More</a>
+        </div>
+        <div class="about-card fly-in-right">
+          <img src="assets/images/bovd_cover.jpg" alt="Born on Valentine's Day — book cover" />
+          <p class="about-card-label">#1 Best Sellers in Teen &amp; Young Adult Inspirational &amp; Personal Growth eBooks</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== REVIEW QUOTE ===== -->
+    <section class="section" style="background: var(--cream-warm); text-align: center;">
+      <div style="max-width: 600px; margin: 0 auto;">
+        <div class="review-stars" style="font-size: 1.1rem; margin-bottom: 0.8rem;">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
+        <blockquote class="pull-quote fly-in" style="padding: 0; margin: 0 auto 1rem;">
+          &ldquo;I didn't want to put it down &mdash; I felt the child's fear and the adult's grief, but also the determination to survive.&rdquo;
+        </blockquote>
+        <p style="font-size: 0.82rem; color: var(--ink-muted); letter-spacing: 0.1em; text-transform: uppercase;">Jolanda Blum &middot; Amazon Review</p>
+      </div>
+    </section>
+
+    <!-- ===== ABOUT BARBARA ===== -->
+    <section class="section">
+      <div class="author-strip">
+        <div class="author-strip-img fly-in-left">
+          <img src="assets/images/barbara-author.png" alt="Barbara Marcus" />
+        </div>
+        <div class="author-strip-text fly-in-right">
+          <p class="eyebrow">Meet the Author</p>
+          <h2>Barbara Marcus</h2>
+          <div class="rule"></div>
+          <p>
+            Brooklyn-born educator, psychotherapist, and storyteller. Barbara has been in private practice
+            for over 40 years, bringing deep insight and compassion to both her professional work and her writing.
+          </p>
+          <a href="author.html" class="btn btn-outline" style="margin-top: 0.5rem;">About Barbara</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== PULL QUOTE ===== -->
+    <blockquote class="pull-quote fly-in">
+      &ldquo;A memoir for anyone who has ever struggled to feel worthy of love &mdash; and for those who know the power of a story well told.&rdquo;
+    </blockquote>
+
+    <!-- ===== CONTACT STRIP ===== -->
+    <section class="contact-strip">
+      <p class="eyebrow" style="text-align:center;">Get in Touch</p>
+      <h2>Contact Barbara</h2>
+      <div class="rule rule-center"></div>
+      <p>For media inquiries, book-club Q&amp;As, speaking engagements, or just to share your story.</p>
+      <a href="contact.html" class="btn btn-primary">Send a Message</a>
+    </section>
+
+  </main>
+
+  <!-- ===== FOOTER ===== -->
+  <footer class="site-footer">
+    <p class="footer-copy">
+      Copyright &copy; 2025 | Barbara Marcus | Created by
+      <a href="https://atmarcus.net/#consulting" target="_blank" rel="noopener">Blueprint for Creativity</a>
+      | All rights reserved.
+    </p>
+  </footer>
+
+<script src="js/main.js"></script>
+</body>
+</html>

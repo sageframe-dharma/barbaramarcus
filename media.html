@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Media | Barbara Marcus</title>
+  <meta name="description" content="Press, interviews, and media features for Barbara Marcus and Born on Valentine's Day." />
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+
+  <nav class="site-nav scrolled" id="site-nav">
+    <a href="index.html" class="nav-logo"><img src="assets/images/logo.png" alt="Barbara Marcus" /></a>
+    <button class="nav-toggle" aria-label="Toggle menu" onclick="this.parentElement.querySelector('.nav-links').classList.toggle('open')">
+      <span></span><span></span><span></span>
+    </button>
+    <ul class="nav-links">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="book.html">Book</a></li>
+      <li><a href="author.html">Author</a></li>
+      <li><a href="media.html" class="active">Media</a></li>
+      <li><a href="contact.html">Contact</a></li>
+      <li><a href="buy.html" class="nav-cta primary-cta">Buy Now</a></li>
+    </ul>
+  </nav>
+
+  <main class="offset-nav">
+
+    <section class="page-hero">
+      <video class="page-hero-video" autoplay muted loop playsinline poster="assets/images/video-poster.jpg" aria-hidden="true">
+        <source src="assets/video/hero-bg.mp4" type="video/mp4" />
+      </video>
+      <div class="page-hero-overlay" aria-hidden="true"></div>
+      <div class="page-hero-inner">
+        <p class="eyebrow">Press &amp; Features</p>
+        <h1>Media</h1>
+      </div>
+    </section>
+
+    <!-- ===== VIDEO ===== -->
+    <section class="section">
+      <div class="media-grid">
+        <div class="media-feature fly-in">
+          <div class="media-feature-img">
+            <div class="video-wrap">
+              <iframe src="https://www.youtube.com/embed/aQZc0ydPNA8" title="Global Book Network — Barbara Marcus" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            </div>
+          </div>
+          <div class="media-feature-txt">
+            <p class="eyebrow">Video Interview</p>
+            <h2>Global Book Network</h2>
+            <div class="rule"></div>
+            <p>
+              Barbara in conversation with the Global Book Network about the memoir and her journey as a first-time author.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== REEL ===== -->
+    <section class="section" style="background: var(--cream);">
+      <div style="max-width: 800px; margin: 0 auto; display: grid; grid-template-columns: 260px 1fr; gap: 3rem; align-items: center;">
+        <div class="fly-in-left">
+          <video controls playsinline style="width:100%; border-radius: 4px; box-shadow: 0 4px 16px rgba(0,0,0,0.1);">
+            <source src="assets/video/barbara-reel.mp4" type="video/mp4" />
+          </video>
+        </div>
+        <div class="fly-in-right">
+          <p class="eyebrow">Video</p>
+          <h2 style="font-size: clamp(1.2rem, 2vw, 1.6rem); margin-bottom: 0.8rem;">Barbara Marcus Reads</h2>
+          <div class="rule"></div>
+          <p style="color: var(--ink-muted); font-size: 0.92rem; line-height: 1.8;">A reading from <em>Born on Valentine's Day</em>.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== PARTNER BOOKSTORES ===== -->
+    <section class="section" style="background: var(--cream-warm);">
+      <div class="section-header fly-in">
+        <p class="eyebrow">In Stores</p>
+        <h2>Partner Bookstores</h2>
+        <div class="rule rule-center"></div>
+      </div>
+
+      <div style="max-width: 320px; margin: 0 auto;">
+        <div class="slideshow" id="bookstore-slideshow">
+          <div class="slideshow-track" id="slideshow-track">
+            <img src="assets/images/this-old-book.jpg" alt="This Old Book — partner bookstore" />
+            <img src="assets/images/hello-again-books.jpg" alt="Hello Again Books — partner bookstore" />
+            <img src="assets/images/storybook-cove.jpg" alt="Storybook Cove — partner bookstore" />
+          </div>
+          <button class="slide-btn slide-prev" aria-label="Previous" onclick="moveSlide(-1)">&#8249;</button>
+          <button class="slide-btn slide-next" aria-label="Next" onclick="moveSlide(1)">&#8250;</button>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== PRESS INQUIRY ===== -->
+    <section class="contact-strip">
+      <p class="eyebrow" style="text-align:center;">Press Inquiries</p>
+      <h2>Feature Barbara</h2>
+      <div class="rule rule-center"></div>
+      <p>Available for podcasts, book-club Q&amp;As, readings, and speaking engagements.</p>
+      <a href="contact.html" class="btn btn-primary">Media Inquiries</a>
+    </section>
+
+  </main>
+
+  <footer class="site-footer">
+    <p class="footer-copy">Copyright &copy; 2025 | Barbara Marcus | Created by <a href="https://atmarcus.net/#consulting" target="_blank" rel="noopener">Blueprint for Creativity</a> | All rights reserved.</p>
+  </footer>
+
+<script src="js/main.js"></script>
+<script>
+  var currentSlide = 0;
+  var track = document.getElementById('slideshow-track');
+  var totalSlides = track ? track.children.length : 0;
+  function moveSlide(dir) {
+    currentSlide = (currentSlide + dir + totalSlides) % totalSlides;
+    track.style.transform = 'translateX(-' + (currentSlide * 100) + '%)';
+  }
+</script>
+</body>
+</html>

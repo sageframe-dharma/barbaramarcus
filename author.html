@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Author | Barbara Marcus</title>
+  <meta name="description" content="Meet Barbara Marcus — Brooklyn-born educator, psychotherapist, and author of Born on Valentine's Day." />
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+
+  <nav class="site-nav scrolled" id="site-nav">
+    <a href="index.html" class="nav-logo"><img src="assets/images/logo.png" alt="Barbara Marcus" /></a>
+    <button class="nav-toggle" aria-label="Toggle menu" onclick="this.parentElement.querySelector('.nav-links').classList.toggle('open')">
+      <span></span><span></span><span></span>
+    </button>
+    <ul class="nav-links">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="book.html">Book</a></li>
+      <li><a href="author.html" class="active">Author</a></li>
+      <li><a href="media.html">Media</a></li>
+      <li><a href="contact.html">Contact</a></li>
+      <li><a href="buy.html" class="nav-cta primary-cta">Buy Now</a></li>
+    </ul>
+  </nav>
+
+  <main class="offset-nav">
+
+    <section class="author-hero">
+      <p class="eyebrow">About the Author</p>
+      <h1>Barbara Marcus</h1>
+    </section>
+
+    <section style="background: var(--cream-warm);">
+      <div class="author-detail">
+        <div class="author-photo fly-in-left">
+          <img src="assets/images/barbara-author.png" alt="Barbara Marcus" />
+        </div>
+        <div class="author-bio fly-in-right">
+          <h2>Educator. Psychotherapist. Storyteller.</h2>
+          <div class="rule"></div>
+          <p>
+            Barbara Marcus is a Brooklyn-born educator, psychotherapist, and storyteller who has been in private practice
+            for over 40 years. Living in New York City, she brings deep insight and compassion to both her professional
+            work and her writing.
+          </p>
+          <p>
+            Her memoir, <em>Born on Valentine's Day</em>, is a brave and deeply
+            personal account of a life forged in hardship but defined by resilience.
+          </p>
+          <p>
+            Through her story, Barbara explores the enduring complexities of family, identity, and emotional survival,
+            offering a voice of honesty and healing to those navigating their own past.
+          </p>
+          <a href="contact.html" class="btn btn-primary" style="margin-top: 0.4rem;">Contact Barbara</a>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" style="text-align: center; background: var(--cream-warm);">
+      <img src="assets/images/bovd_cover.jpg" alt="Born on Valentine's Day" style="max-width: 220px; margin: 0 auto 1.5rem; box-shadow: 4px 8px 20px rgba(0,0,0,0.12);" />
+      <h2 style="font-size: clamp(1.3rem, 2.5vw, 1.8rem); max-width: 460px; margin: 0 auto 0.8rem;">Read Barbara's Story</h2>
+      <p style="color: var(--ink-muted); max-width: 400px; margin: 0 auto 1.5rem; font-size: 0.92rem;">
+        Available now — eBook, paperback, hardcover, and audiobook.
+      </p>
+      <a href="buy.html" class="btn btn-primary">Get Your Copy</a>
+    </section>
+
+  </main>
+
+  <footer class="site-footer">
+    <p class="footer-copy">Copyright &copy; 2025 | Barbara Marcus | Created by <a href="https://atmarcus.net/#consulting" target="_blank" rel="noopener">Blueprint for Creativity</a> | All rights reserved.</p>
+  </footer>
+
+<script src="js/main.js"></script>
+</body>
+</html>
