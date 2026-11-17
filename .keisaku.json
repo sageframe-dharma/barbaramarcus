@@ -1,5 +1,5 @@
 {
-  "keisaku": 1,
+  "keisaku": 2,
   "works": [
     {
       "id": "barbaramarcus",
@@ -7,24 +7,26 @@
       "media": [
         "website"
       ],
+      "status": "shipped",
       "repo": "https://github.com/sageframe-dharma/barbaramarcus.git",
       "created": "2026-04-06",
-      "last_updated": "2026-04-06",
+      "last_updated": "2026-11-17",
       "_keisaku": {
-        "generated_at": "2026-11-16T10:49:47",
+        "generated_at": "2026-11-17T15:26:32",
         "generator_version": "1",
-        "sources": {},
+        "sources": {
+          "contract": "ho-process/kamae-6-barbaramarcus-state-memory.md"
+        },
         "derived_defaults": {
           "id": "barbaramarcus",
           "name": "barbaramarcus",
           "media": [
             "software"
           ],
+          "status": "shipped",
           "created": "2026-04-06"
         },
-        "contract_issues": [
-          "no-contract-source"
-        ]
+        "contract_issues": []
       }
     }
   ]
