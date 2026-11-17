@@ -1,0 +1,31 @@
+{
+  "keisaku": 1,
+  "works": [
+    {
+      "id": "barbaramarcus",
+      "name": "barbaramarcus",
+      "media": [
+        "software"
+      ],
+      "repo": "https://github.com/sageframe-dharma/barbaramarcus.git",
+      "created": "2026-04-06",
+      "last_updated": "2026-04-06",
+      "_keisaku": {
+        "generated_at": "2026-11-16T10:49:47",
+        "generator_version": "1",
+        "sources": {},
+        "derived_defaults": {
+          "id": "barbaramarcus",
+          "name": "barbaramarcus",
+          "media": [
+            "software"
+          ],
+          "created": "2026-04-06"
+        },
+        "contract_issues": [
+          "no-contract-source"
+        ]
+      }
+    }
+  ]
+}
